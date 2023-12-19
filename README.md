@@ -24,9 +24,11 @@ To test the APIs, use the provided [Postman collection](https://elements.getpost
 
 1. **Test: Get All Symbols Statistics:**
    - Use the [Get All Symbols Statistics](https://www.postman.com/kashierpayments/workspace/coimex/request/29448651-934eccc8-3765-4faf-9d22-d1c34ef430a0?ctx=documentation) request in the Postman collection.
+   - Ensure you are using the local Postman environment.
 
 2. **Test: Get Symbol Statistics By Symbol Name:**
    - Use the [Get Symbol Statistics By Symbol Name](https://www.postman.com/kashierpayments/workspace/coimex/request/29448651-12f730a2-8612-4f9f-8d24-191e87c3ca63?ctx=documentation) request in the Postman collection.
+   - Ensure you are using the local Postman environment.
 
 ### Examples for Success and Failure with Tests
 
