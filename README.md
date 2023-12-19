@@ -5,17 +5,49 @@
 1. **Set up MongoDB URI:**
    - Set a valid MongoDB URI as the `MONGODB_URI` environment variable in the `.env` file.
 
-2. **Seed the Database:**
+2. **Install Npm Dependencies:**
+    - Run the following command to install all npm packages
+    ```bash
+    npm i
+    ```
+
+3. **Seed the Database:**
    - Run the following command to generate and insert random transactions into the "transactions" collection:
      ```bash
      npm run seed {number_of_transactions}
      ```
      Replace `{number_of_transactions}` with the desired number of transactions to be generated.
 
-3. **Build and Start the Server:**
+4. **Build and Start the Server:**
    - Build the TypeScript code and start the server using the following command:
      ```bash
      npm run start:dev
+     ```
+
+## Using Docker (Optional)
+
+To run the Coimex Trading Platform using Docker, follow these steps:
+
+1. **Build the Docker Image:**
+   - Run the following command to build the Docker image:
+     ```bash
+     docker build -t coimex-platform .
+     ```
+
+2. **Run Docker Compose:**
+   - Run the following command to start the application and MongoDB using Docker Compose:
+     ```bash
+     docker-compose up
+     ```
+
+   This command will start both services defined in the `docker-compose.yml` file.
+
+   Access the application at [http://localhost:3000](http://localhost:3000).
+
+3. **Stop Docker Containers:**
+   - To stop the Docker containers, run the following command:
+     ```bash
+     docker-compose down
      ```
 
 ## Testing the APIs
